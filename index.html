@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fluid layout with Flexbox</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+            }
+            body {
+                font-family: Verdana, sans-serif;
+                font-size: clamp(1.25rem, 0.75rem + 1vmax, 0.75rem + 1vmax);
+            }
+            a {
+                font-size: clamp(1.25rem, 0.75rem + 1vmax, 0.75rem + 1vmax);
+            }
+            header {
+                margin-bottom: none;
+            }
+            .subtitle {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            nav {
+                display: flex;
+            	align-items: center;
+            	text-align: center;
+                justify-content: space-between;
+                gap: 1 vh;
+                margin: 1rem 0; 
+            }
+            nav > a {
+				color: black;
+                text-decoration: none;
+            }
+
+            img {
+				max-width: 20%;
+				height: auto;
+            }
+
+            main {
+                display: flex;
+                flex-wrap: wrap;
+               	align-items: center;
+                justify-content: center;
+                margin: 1.25vmax;
+                margin: 1rem 0;
+            }
+            article {
+                margin: 1.25vmax;
+               	align-items: center;
+                flex: 1;
+   				line-height: 1.5;
+                min-width: 22rem;
+   				max-width:65ch;
+            }
+            h1 {
+                font-size: clamp(4.219rem, 3rem + 1vmax, 3rem + 1vmax);
+                margin-bottom: 1rem;
+                background-color: #1a73e8;
+                display: flex;
+               	text-align: center;
+                justify-content: center;   
+               	align-items: center;
+                gap: 1 rem;
+                color: white;
+            }
+            h2 {
+                font-size: clamp(2.813rem, 1.75rem + 1vmax, 1.75rem + 1vmax);
+            	text-align: center;
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+
+        </style>
+    </head>
+    <body>
+		<header>
+			<nav>
+				<p></p>
+				<img src="exemplostroke4.jpg">
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
+				<a style="background-color: #1a73e8; color: white; border: 1px solid black; padding: 0.25vmax 0.5vmax; border-radius: 0.5vw;"href="home.html">Início</a>
+				<a href="home.html">Away</a>
+				<a href="home.html">New</a>				
+				<a href="home.html">Old</a>
+				<a href="home.html">About</a>
+				<a href="home.html">Exact</a>
+				<p></p>
+			</nav>
+	        <h1>Início</h1>
+		</header>
+
+        <main>
+            <article>
+				<section>
+					<h2>Cupom AliExpress Janeiro 2025!</h2>
+					<p>KALAMAZOO, Michigan—A group of disgruntled grammarians calling themselves “Mad, We Are, As Hell” has filed a number of civil lawsuits over the past few weeks. The targets of these suits are writers, raconteurs, and professional man-in-the-street interviewees who, they claim, are inveterate violators of the rules of grammar.</p>
+					<p style="color: #1a73e8 ;" > The group’s spokesperson, Millicent Peevish, Head Shusher at the Kalamazoo District Library, said the grammarians could no longer sit back and allow “the splitting of blameless infinitives and the ending of sentences with evil, evil prepositions.” A previous campaign — called Shock and Appalled — that focused on writing testy letters to the editors of various local publications had no discernible effect.</p>
+					<p>One defendant is the <span style="color: #1a73e8">essayist and dry-cleaning critic</span> Boris Langenshortevitch, whom the grammarians describe as a “monster” who “brazenly and redundantly uses ‘the hoi polloi’, when any fool with half a brain knows that ‘hoi’ is the old Greek word for ‘the.’ Duh!” Edna Doright, Chief Comma Officer at Tomes ’R Us, defended the suit. “Without an appreciation for ancient Greek, we as a society are lost,” she said. For his part, Mr. Langenshortevitch is unrepentant. “I won’t change the way I write but, to be quite honest, these grammar fundamentalists scare the bejeezus out of me,” he said.</p>
+					<p>When asked if litigation was the appropriate response to these alleged grammar violations, Harvey Earnest, president of the Center for Subject-Verb Agreement, was adamant. “My God,” he said, “there are people out there wantonly dangling participles and starting sentences with conjunctions. Where will all this madness lead us if we do not do something to stop it?”</p>
+				</section>
+            </article>
+        </main>
+        
+        <footer>
+            <a href="https://facebook.com/"><img src="images/facebook.png" class="social-icon" alt="Facebook logo">Facebook</a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" class="social-icon" alt="Twitter logo">Twitter</a>
+            <a href="https://instagram.com/"><img src="images/instagram.png" class="social-icon" alt="Instagram logo">Instagram</a>
+            <a href="http://www.hbo.com/silicon-valley"><img src="images/hooli.png" class="social-icon" alt="Hooli logo">Hooli</a>
+        </footer>
+    </body>
+</html>
+
+
+				color: #34a853;
+                padding: 1rem 0;
+
+
+            image {
+				max-width: 100%;
+				height: auto;
+				flex-grow:1;
+			}	
+
+			.item1,
+			.item2,
+			.item3,
+			.item4,
+			.item5,			
+			.item6 {
+				flex-grow:1;
+			}
+
+                margin: 1.25vmax;
+
+                background-color: #34a853;
+
+                margin: 1rem 0;
+
+            	align-items: center;
+            	text-align: center;
+
+            header {
+                margin-bottom: 1rem;
+                background-color: #1a73e8;
+                display: flex;
+               	text-align: center;
+                justify-content: center;   
+               	align-items: center;
+                gap: 1 rem;
+            }
+
+
+
+				<a href="#">Home</a>
+				<a href="#">Away</a>
+				<a href="#">New</a>
+				<a href="#">Old</a>
+				<a href="#">About</a>
+				<a href="#">Exact</a>
+				
+								<a href="home.html">Home</a>
+
+                padding-right: clamp(1.25rem, 2.5vw, 2rem);
+                padding: clamp(1.25rem, 2.5vw, 2rem);
+border-radius: 10px;
+                padding-center: clamp(1.25rem, 2.5vw, 2rem);
+
+                font-size: clamp(1.25rem, 0.75rem + 1vmax, 1.75rem);
+
+                gap: 1 rem;
+                padding: 100vw, 130vw;
+
+            img {
+				max-width: 100%;
+				height: auto;
+            }
+
+
+						   (max-width: 7000px) 60vw, 
+						   30vw"
